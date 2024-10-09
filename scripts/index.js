@@ -34,7 +34,7 @@ function renderCard(cardElement) {
 };
 
 // @todo: Вывести карточки на страницу
-for (let i = 0; i < initialCards.length; i++) {
-    cardElement = addCard(initialCards[i], deleteCard);
+initialCards.forEach (function (item) {
+    cardElement = addCard(item, deleteCard);
     renderCard(cardElement);
-};
+});
